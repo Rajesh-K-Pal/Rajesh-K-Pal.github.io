@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajesh Kumar Pal - Portfolio [cite: 1]</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #2980b9;
+            --text-color: #333;
+            --bg-light: #f9f9f9;
+        }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            color: var(--text-color); 
+            line-height: 1.6; 
+        }
+        header { 
+            background: var(--primary-color); 
+            padding: 1rem 0; 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000; 
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a { 
+            color: #fff; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+        nav a:hover { color: #3498db; }
+        .container { 
+            max-width: 1200px; 
+            margin: auto; 
+            padding: 20px; 
+        }
+        .hero { 
+            display: flex; 
+            align-items: center; 
+            gap: 40px; 
+            margin: 40px 0; 
+            background: var(--bg-light);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .hero img { 
+            width: 250px; 
+            height: auto; 
+            border-radius: 12px; 
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15); 
+        }
+        .hero-content h1 { 
+            margin: 0 0 10px 0; 
+            font-size: 2.8rem; 
+            color: var(--primary-color); 
+        }
+        .hero-content h2 { 
+            margin: 0 0 15px 0; 
+            font-size: 1.5rem; 
+            color: var(--accent-color); 
+            border: none;
+            padding: 0;
+        }
+        .contact-info { 
+            font-size: 1rem; 
+            color: #555; 
+            margin-bottom: 20px;
+        }
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        section { 
+            margin-bottom: 50px; 
+        }
+        h2.section-title { 
+            border-bottom: 3px solid var(--primary-color); 
+            padding-bottom: 10px; 
+            color: var(--primary-color); 
+            font-size: 2rem;
+            margin-bottom: 25px;
+        }
+        .skills-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+            gap: 20px; 
+        }
+        .skill-card { 
+            background: #fff; 
+            padding: 20px; 
+            border: 1px solid #eee; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+        .skill-card h4 { 
+            margin: 0 0 10px 0; 
+            color: var(--accent-color); 
+            font-size: 1.1rem;
+        }
+        .job, .education-item { 
+            margin-bottom: 30px; 
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-color);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .job-header, .edu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 15px;
+        }
+        .job h3, .education-item h3 { 
+            margin: 0; 
+            color: var(--secondary-color); 
+            font-size: 1.4rem;
+        }
+        .job .company, .education-item .institution { 
+            font-weight: bold; 
+            color: var(--text-color); 
+        }
+        .date { 
+            font-style: italic; 
+            color: #7f8c8d; 
+            font-weight: 500;
+        }
+        ul { margin: 0; padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        
+        @media (max-width: 768px) {
+            .hero { flex-direction: column; text-align: center; }
+            .job-header { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <section class="hero" id="about">
+            <img src="RKP_Professional.png" alt="Rajesh Kumar Pal">
+            <div class="hero-content">
+                <h1>Rajesh Kumar Pal [cite: 1]</h1>
+                <h2>Senior DevOps & Platform Engineer [cite: 4]</h2>
+                <div class="contact-info">
+                    📍 Gurugram [cite: 2] | 📞 +91 8210114500 [cite: 2] | ✉️ kumar.rajesh893@gmail.com [cite: 2] <br>
+                    🔗 <a href="https://www.linkedin.com/in/rajesh-kumar-pal-devops" target="_blank">linkedin.com/in/rajesh-kumar-pal-devops</a> [cite: 2]
+                </div>
+                <p>Senior DevOps & Platform Engineer with 8+ years of experience in cloud infrastructure, automation, and observability[cite: 4]. Proven expertise in designing scalable solutions across AWS, Azure, and GCP, alongside advanced Linux administration (RHEL/Ubuntu) and enterprise network appliance management[cite: 5]. Specialized in automating deployments via Terraform and orchestrating microservices on Kubernetes, while optimizing system reliability and conducting deep-dive root-cause analysis for enterprise applications[cite: 6].</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h4>Programming & Configuration</h4>
+                    <p>Python, Bash, Shell Scripting, Ansible[cite: 8].</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Observability & Monitoring</h4>
+                    <p>Grafana, Prometheus, Nagios, Loki, Alert manager, Tanium[cite: 9].</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Cloud Platforms & IaC</h4>
+                    <p>AWS, Microsoft Azure, Google Cloud Platform (GCP), Terraform, AWS CloudFormation, ARM Templates, GCP Deployment Manager[cite: 10].</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Cloud Security & Governance</h4>
+                    <p>AWS Organizations, Control Tower, Security Hub, IAM Identity Center (SSO), Service Control Policies (SCPs)[cite: 11].</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Network & Edge Security</h4>
+                    <p>AWS Transit Gateway, Azure ExpressRoute, GCP Cloud Interconnect, AWS WAF, Azure Application Gateway, F5 BIG-IP LTM[cite: 12].</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Threat Detection & Data Protection</h4>
+                    <p>AWS GuardDuty, Azure Key Vault, GCP Cloud KMS, AWS KMS, Secrets Manager, CloudTrail[cite: 13].</p>
+                </div>
+                <div class="skill-card">
+                    <h4>CI/CD & Version Control</h4>
+                    <p>Jenkins, GitLab CI, GitHub Actions, Git, GitHub, GitLab[cite: 14].</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Containerization & Orchestration</h4>
+                    <p>Docker, Kubernetes, Helm, Docker Swarm, Podman[cite: 15].</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Databases</h4>
+                    <p>Oracle Database, MySQL, PostgreSQL, MongoDB[cite: 16].</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Networking & Load Balancing</h4>
+                    <p>F5 BIG-IP LTM, AWS Elastic Load Balancing (ALB/NLB), Azure Load Balancer, Azure Application Gateway[cite: 17].</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Operating Systems & Servers</h4>
+                    <p>Linux (Ubuntu, CentOS, RHEL 6/7/8/9), Windows Server, Nginx, Apache HTTP, Tomcat, Oracle WebLogic[cite: 18].</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2 class="section-title">Professional Experience</h2>
+
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <h3>Senior DevOps Engineer</h3>
+                        <div class="company">Net connect Global [cite: 20]</div>
+                    </div>
+                    <div class="date">Jun 2024 - Present [cite: 20]</div>
+                </div>
+                <ul>
+                    <li>Architected modular Terraform infrastructure as code (IaC) to automate cloud resource provisioning, reducing deployment times by 40% and eliminating manual configuration errors[cite: 21].</li>
+                    <li>Executed a zero-downtime proof-of-concept migration for F5 BIG-IP configurations from v14 to v21, successfully porting virtual servers, pools, nodes, and SSL profiles without altering base network topology[cite: 22, 23].</li>
+                    <li>Led root-cause investigations into Java application crashes and Oracle database connection leaks within the Upload Migrated Products class, diagnosing memory histograms, thread dumps, and active session logs to restore stability[cite: 24].</li>
+                    <li>Provisioned dedicated logical volumes for /var/lib/docker via advanced LVM storage reallocations, reclaiming unassigned volume group space to isolate and optimize containerized environments[cite: 25].</li>
+                    <li>Consolidated enterprise network security by configuring unified bidirectional firewall rules, leveraging dedicated IP sets to secure essential DNS and DHCP traffic[cite: 26].</li>
+                    <li>Orchestrated containerized microservices via Kubernetes, automating cluster scaling and maintaining 99.9% high availability for critical production applications[cite: 27].</li>
+                    <li>Established comprehensive observability frameworks integrating Grafana and Prometheus to monitor real-time system metrics, drastically accelerating proactive incident response workflows[cite: 28].</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <h3>DevOps Specialist</h3>
+                        <div class="company">Tech Mahindra [cite: 29]</div>
+                    </div>
+                    <div class="date">Oct 2021 - March 2023 [cite: 29]</div>
+                </div>
+                <ul>
+                    <li>Spearheaded a fleet-wide Linux server patching advisory across RHEL 7/9 and Ubuntu environments, prioritizing CVE mitigation utilizing CVSS and EPSS scoring frameworks alongside live-patching protocols[cite: 30].</li>
+                    <li>Developed modular Terraform configurations to support multi-environment deployments, implementing remote state management and state locking to prevent configuration conflicts[cite: 31].</li>
+                    <li>Configured multi-user XRDP remote desktop access on RHEL 9 systems by establishing custom .Xclients configurations, enabling seamless simultaneous graphical database administration for pgadmin accounts[cite: 32].</li>
+                    <li>Designed robust CI/CD pipelines with integrated static code analysis and container security scans, executing blue-green and canary deployment strategies to guarantee zero-downtime releases[cite: 33].</li>
+                    <li>Configured advanced Kubernetes architecture utilizing Helm charts, StatefulSets, and Persistent Volumes, alongside custom Operators to automate complex application scaling[cite: 34].</li>
+                    <li>Created RESTful APIs and microservices utilizing Python frameworks (Flask/FastAPI) to support highly scalable backend architectures and data processing workflows[cite: 35].</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <h3>Cloud Engineer</h3>
+                        <div class="company">Scientific Games [cite: 36]</div>
+                    </div>
+                    <div class="date">Nov 2019 - Oct 2021 [cite: 36]</div>
+                </div>
+                <ul>
+                    <li>Recovered critical Azure VM restore point data on Ubuntu servers by diagnosing and resolving duplicate LVM volume group UUID conflicts utilizing vgimportclone[cite: 37].</li>
+                    <li>Engineered automated system log management routines across Ubuntu application servers, capping systemd journal disk usage and enforcing custom logrotate policies to prevent storage bloat[cite: 38].</li>
+                    <li>Automated multi-cloud resource allocation and orchestration across AWS and Azure utilizing Python, Ansible, and Jenkins, optimizing infrastructure footprint and cost efficiency[cite: 39].</li>
+                    <li>Designed and managed robust CI/CD pipelines to enhance deployment automation, drastically accelerating release cycles across various testing and production environments[cite: 40].</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <h3>System Administrator</h3>
+                        <div class="company">Wipro Limited [cite: 41]</div>
+                    </div>
+                    <div class="date">Nov 2016 - Nov 2019 [cite: 41]</div>
+                </div>
+                <ul>
+                    <li>Designed and deployed highly available AWS Elastic Container Service (ECS) infrastructure utilizing Terraform modules across production, development, and staging environments[cite: 42].</li>
+                    <li>Established and optimized GitLab CI/CD pipelines to ensure seamless, secure code integration and continuous delivery[cite: 43].</li>
+                    <li>Hardened enterprise MongoDB database environments by implementing strict IP access restrictions and automating infrastructure provisioning workflows[cite: 44].</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section id="education">
+            <h2 class="section-title">Education</h2>
+            <div class="education-item">
+                <div class="edu-header">
+                    <div>
+                        <h3>Integrated Master of Computer Applications (IMCA)</h3>
+                        <div class="institution">Birla Institute of Technology, Ranchi [cite: 47]</div>
+                        <div>Specialization: Computer Science [cite: 48]</div>
+                    </div>
+                    <div class="date">2011 - 2016 [cite: 46]</div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
